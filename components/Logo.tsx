@@ -1,6 +1,15 @@
 import Image from "next/image";
 
-// Export the "R.R — Outline badge" from Figma (node 2071:2702) to /public/images/logo-outline.svg
-export function Logo({ size = 16 }: { size?: number }) {
-  return <Image src="/images/logo-outline.svg" alt="R.R logo" width={size} height={size} priority />;
+export function Logo({
+  size = 16,
+  variant = "original",
+}: {
+  size?: number;
+  variant?: "original" | "light";
+}) {
+  const src =
+    variant === "light"
+      ? "/images/logo-outline-light.svg"
+      : "/images/logo-outline.svg";
+  return <Image src={src} alt="R.R logo" width={size} height={size} priority />;
 }

@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <div className="relative order-1 mx-auto h-[420px] w-full max-w-[470px] lg:order-2 lg:h-[561px]">
-          <div className="absolute left-0 top-[35%] h-[155px] w-[155px]"><Logo size={155} /></div>
+          <div className="absolute left-0 top-[35%] h-[155px] w-[155px]"><Logo size={155} variant="light" /></div>
           <Dots className="absolute -right-4 bottom-[15%]" />
           <Image
             src="/images/hero-portrait.png"
@@ -95,7 +95,7 @@ export default function Home() {
         <SectionHeading title="achievements" />
         <div className="box grid overflow-hidden md:grid-cols-[302px_1fr]">
           <div className="relative min-h-[200px] border-b border-gray bg-gray/10 md:border-b-0 md:border-r">
-            <Image src="/images/certificate.svg" alt="Google UX Design certificate" fill sizes="302px" className="object-cover" />
+            <Image src="/images/certificate.png" alt="Google UX Design certificate" fill sizes="302px" className="object-cover" />
           </div>
           <div className="flex flex-col justify-center gap-4 p-6 md:p-[22px]">
             <h3 className="text-2xl font-medium text-white">Google UX Design Professional Certificate</h3>

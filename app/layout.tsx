@@ -9,6 +9,9 @@ import { Decor } from "@/components/Decor";
 export const metadata: Metadata = {
   title: "Rohan Rai — AI, data and web developer",
   description: "Portfolio of Rohan Rai, a computer science student in Bhutan building AI, data and full-stack web projects.",
+  icons: {
+    icon: "/images/logo-outline.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
