@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-bg font-mono text-base text-gray antialiased;
+  }
+  ::selection { background: #c778dd55; color: #fff; }
+}
+
+@layer components {
+  .container-content { @apply mx-auto w-full max-w-content px-5 sm:px-6 lg:px-0; }
+  .box { @apply border border-gray bg-bg; }
+  .link-accent { @apply font-medium text-primary transition-opacity hover:opacity-80; }
+}
