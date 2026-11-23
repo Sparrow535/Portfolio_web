@@ -7,7 +7,7 @@ export function ProjectCard({ project, imageHeight = 125 }: { project: Project; 
   return (
     <article className="box flex flex-col overflow-hidden">
       <div className="relative w-full bg-gray/10" style={{ height: imageHeight }}>
-        <Image src={project.image} alt={`${project.title} preview`} fill sizes="(min-width:1024px) 504px, 100vw" className="object-cover object-top" />
+        <Image src={project.image} alt={`${project.title} preview`} fill sizes="(min-width:1024px) 504px, 100vw" className="object-contain object-top" />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-[15px]">
         <p className="text-xs font-medium text-primary">{project.tag}</p>

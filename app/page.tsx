@@ -84,7 +84,7 @@ export default function Home() {
             <div className="mt-8"><Button href="/about">Read more →</Button></div>
           </div>
           <div className="relative mx-auto h-[420px] w-[291px] lg:h-[605px]">
-            <Image src="/images/about-portrait.png" alt="Sketch portrait of Rohan" fill sizes="291px" className="object-cover" />
+            <Image src="/images/about-portrait.png" alt="Sketch portrait of Rohan" fill sizes="291px" className="object-contain" />
             <Dots cols={4} rows={4} className="absolute -left-3 top-12" />
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function Home() {
         <SectionHeading title="achievements" />
         <div className="box grid overflow-hidden md:grid-cols-[302px_1fr]">
           <div className="relative min-h-[200px] border-b border-gray bg-gray/10 md:border-b-0 md:border-r">
-            <Image src="/images/certificate.png" alt="Google UX Design certificate" fill sizes="302px" className="object-cover" />
+            <Image src="/images/certificate.png" alt="Google UX Design certificate" fill sizes="302px" className="object-contain" />
           </div>
           <div className="flex flex-col justify-center gap-4 p-6 md:p-[22px]">
             <h3 className="text-2xl font-medium text-white">Google UX Design Professional Certificate</h3>
